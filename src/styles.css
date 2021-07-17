@@ -3,7 +3,6 @@
 }
 
 body {
-	/* background-color: #66ff66; */
 	position: relative;
 	min-height: 100vh;
 	width: 100vw;
@@ -128,7 +127,6 @@ body {
 .info-2 {
 	
 	font-family: 'Roboto', cursive;
-	/* color: lightgreen; */
 	text-align: center;
 	height: 50vh;
 	background-color: white;
@@ -155,7 +153,6 @@ body {
 .recipe {
 	height: 10vh;
 	margin: 10px;
-	/* filter: invert(100%); */
 }
 
 .info-2-text {
@@ -165,13 +162,11 @@ body {
 
 .info-2-2 {
 	width: 20vw;
-	/* margin-right: 25vw; */
 }
 
 .tips {
 	height: 10vh;
 	margin: 10px;
-	/* filter: brightness(0) invert(100%); */
 	
 }
 
@@ -183,7 +178,6 @@ body {
 .banana {
 	height: 10vh;
 	margin: 10px;
-	/* filter: brightness(0) invert(100%); */
 	
 }
 
@@ -193,7 +187,6 @@ body {
 
 .form {
 	display: inline-block;
-	/* margin: 10vh auto; */
 	padding-top: 5%;
 	width: 50vw;
 	height: 50vh;
