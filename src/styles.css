@@ -13,8 +13,8 @@ body {
 .header {
 	font-family: 'Merienda',cursive;
 	display: flex;
-	color: white;
-	background-color: green;
+	color: #fff;
+	background-color: rgb(0,128,0);
 	height: 60px;
 	min-width: 100%;
 	line-height: 60px;
@@ -42,37 +42,37 @@ nav {
 #hamnav {
 	width: 100%;
 	height: 60px;
-	background: green;
+	background: rgb(0,128,0);
   }
   #hamitems { display: flex; }
   #hamitems a {
-	background-color: lightgreen;
+	background-color: rgb(83,238,83);
 	width: 100%;
 	flex-grow: 1;
 	flex-basis: 0;
 	padding: 10px;
-	color: green;
+	color: rgb(0,128,0);
 	text-decoration: none;
 	text-align: center;
 	margin-left: 50%;
   }
   #hamitems a:hover {
-	color: lightgreen;  
-	background: green;
+	color: rgb(144,238,144);  
+	background: rgb(0,128,0);
 }
   
   #hamnav label, #hamburger { display: none; }
 
 .menu-item {
-	color: white;
+	color: rgb(144,238,144);
 	text-decoration: none;
-	margin: 0 30px;
+	padding: 0 30px;
 	width: 103px;
 }
 
 .menu-item:hover {
-	text-decoration: underline;
-	font-weight: 600;
+	color: rgb(0,128,0);
+	background-color: rgb(144,238,144);
 }
 
 
@@ -127,10 +127,10 @@ nav {
 .info-1 {
 	
 	font-family: 'Roboto', cursive;
-	color: white;
+	color: #fff;
 	text-align: center;
 	height: 50vh;
-	background-color: lightgreen;
+	background-color: rgb(144,238,144);
 }
 
 .title {
@@ -176,14 +176,14 @@ nav {
 	font-family: 'Roboto', cursive;
 	text-align: center;
 	height: 50vh;
-	background-color: white;
+	background-color: #fff;
 }
 
 .title-2 {
 	font-family: 'Lobster', cursive;
 	font-size: larger;
 	margin-bottom: 50px;
-	color: lightgreen;
+	color: rgb(144,238,144);
 }
 
 .info-2-flexbox {
@@ -203,7 +203,7 @@ nav {
 }
 
 .info-2-text {
-	color: lightgreen;
+	color: rgb(144,238,144);
 	font-size:x-large;
 }
 
@@ -242,7 +242,7 @@ nav {
 
 .form-text {
 	font-family: 'Roboto', cursive;
-	color: white;
+	color: #fff;
 	margin: 12%;
 }
 
@@ -261,7 +261,7 @@ input[type=submit] {
 	font-family: 'Roboto', cursive;
 	background-color:rgba(255, 255, 255, 0.4);
 	width: 75%;
-	color: green;
+	color: rgb(0,128,0);
 	font-size: medium;
 	display: block;
 	margin: 40px auto;
@@ -278,7 +278,7 @@ input[type=submit] {
   	justify-content: center;
 	bottom: 0;
 	height: 120px;
-	background-color: green;
+	background-color: rgb(0,128,0);
 	padding: 0 47vw;
 }
 
@@ -378,8 +378,8 @@ input[type=submit] {
 
 		  #hamnav label { 
 			display: block; 
-			color: white;
-			background: green;
+			color: #fff;
+			background: rgb(0,128,0);
 			font-style: normal;
 			font-size: 2em;
 			text-align: right;
