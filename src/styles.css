@@ -12,10 +12,10 @@ body {
 
 .header {
 	font-family: 'Merienda',cursive;
+	display: flex;
 	color: white;
 	background-color: green;
 	height: 60px;
-	/* min-width: 100vw; */
 	min-width: 100%;
 	line-height: 60px;
 	text-align: center;
@@ -28,6 +28,54 @@ body {
 	display: flex;
 
 }
+
+.header-menu{
+	display: flex;
+	flex: 1 1 0%;
+	justify-content: flex-end;
+}
+
+nav {
+	display: none;
+}
+
+#hamnav {
+	width: 100%;
+	height: 60px;
+	background: green;
+  }
+  #hamitems { display: flex; }
+  #hamitems a {
+	background-color: lightgreen;
+	width: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 10px;
+	color: green;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 50%;
+  }
+  #hamitems a:hover {
+	color: lightgreen;  
+	background: green;
+}
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+.menu-item {
+	color: white;
+	text-decoration: none;
+	margin: 0 30px;
+	width: 103px;
+}
+
+.menu-item:hover {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
 
 .h1 {
   display: inline-block;
@@ -236,4 +284,108 @@ input[type=submit] {
 	display: inline;
 	vertical-align: middle;
 	line-height: normal;
+}
+
+
+@media only screen and (max-width: 768px) {
+		body {
+			min-width: 445px;
+		}
+		.logo {
+			max-height: 25vh;
+			margin-top: 37.5vh;
+		}
+
+		.main {
+			height: 250vh;
+		}
+
+		.info-1 {
+			height: 100vh;
+		}
+
+		.title {
+			padding: 10px;
+		}
+
+		.info-1-1 {
+			margin: 0 auto;
+			width: 40vw;
+		}
+
+		.info-1-2 {
+			margin: 0 auto;
+			width: 40vw;
+		}
+
+		.info-1-flexbox {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.info-2 {
+			height: 100vh;
+		}
+
+		.title-2 {
+			padding: 10px;
+		}
+
+		.info-2-1 {
+			margin: 0 auto;
+			width: 40vw;
+		}
+
+		.info-2-flexbox {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.info-2-2 {
+			margin: 0 auto;
+			width: 40vw;
+		}
+
+		.form-container {
+			height: 60vh;
+			vertical-align: middle;
+			padding-top: 40vh;
+		}
+
+		.form {
+			height: auto;
+		}
+
+		.menu-item {
+			display: none;
+		}
+
+		nav {
+			display: block;
+		}
+
+		#hamitems a {
+			box-sizing: border-box;
+			display: block;
+			width: 50%;
+			border-top: 1px solid #333;
+		  }
+		  /* (B) SHOW HAMBURGER ICON */
+		  #hamnav label { 
+			display: block; 
+			color: white;
+			background: green;
+			font-style: normal;
+			font-size: 2em;
+			text-align: right;
+			padding-right: 20px;
+		  }
+		
+		  /* (C) TOGGLE SHOW/HIDE MENU */
+		  #hamitems { display: none; }
+		  #hamnav input:checked ~ #hamitems { display: block; }
+		}
+
 }
