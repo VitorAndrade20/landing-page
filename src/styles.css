@@ -61,7 +61,6 @@ nav {
 	background: green;
 }
   
-  /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { display: none; }
 
 .menu-item {
@@ -274,18 +273,22 @@ input[type=submit] {
 
 .footer {
 	position: relative;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
 	bottom: 0;
 	height: 120px;
-	text-align: left;
 	background-color: green;
+	padding: 0 47vw;
 }
 
-.link {
-	display: inline;
-	vertical-align: middle;
-	line-height: normal;
+.footer-img {
+	filter: invert(100%);	
+	display: block;
+	height: 45px;
+	width: 45px;
+	margin: 0 10px;
 }
-
 
 @media only screen and (max-width: 768px) {
 		body {
@@ -372,7 +375,7 @@ input[type=submit] {
 			width: 50%;
 			border-top: 1px solid #333;
 		  }
-		  /* (B) SHOW HAMBURGER ICON */
+
 		  #hamnav label { 
 			display: block; 
 			color: white;
@@ -382,8 +385,7 @@ input[type=submit] {
 			text-align: right;
 			padding-right: 20px;
 		  }
-		
-		  /* (C) TOGGLE SHOW/HIDE MENU */
+	
 		  #hamitems { display: none; }
 		  #hamnav input:checked ~ #hamitems { display: block; }
 		}
